@@ -37,7 +37,7 @@ namespace WishList.Controllers
 
         [AllowAnonymous]
         [HttpPost]
-        public ActionResult Register(RegisterViewModel model)
+        public IActionResult Register(RegisterViewModel model)
         {
             if (!ModelState.IsValid)
                 return View(model);
